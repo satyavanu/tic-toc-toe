@@ -1,0 +1,13 @@
+<div class="container">
+  <div *ngIf="whoisWinner">
+      <h3>{{whoisWinner}} is the Winner</h3>
+  </div>
+  <div class="board__container" #board>
+    <div
+      *ngFor="let grids of [0,1,2,3,4,5,6,7,8]; let i = index" 
+      (click)=clickHandler($event,grids)></div>
+    </div>
+</div>
+<div class="board_game_actions">
+    <button type="button" (click)=resetGame(board) class="btn btn-primary">Reset Game</button>
+</div>
