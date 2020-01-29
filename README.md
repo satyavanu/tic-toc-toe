@@ -10,7 +10,7 @@
 
 ```sh
 git clone <repo>
-cd assessment
+cd <repo>
 npm i && ng serve
 ```
 
